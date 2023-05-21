@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="javascript.js" defer></script>
+    <title>Kai's Rock Paper Scissors</title>
+</head>
+<body>
+    <div id="beg">
+        <h1>Shall we play a game?</h1>
+        <button id="startbutton">Global Thermonuclear War</button>
+    </div>
+    <div id="mid">
+        <h1>What will you play?</h1>
+        <div class="scores">
+            <div class="computerArea">
+                <div class="computerStatement">WOPR:</div>
+                <div class="scoresComp">0</div>
+            </div>
+            <div class="playerArea">
+                <div class="playerStatement">Player:</div>
+                <div class="scoresPlay">0</div>
+            </div>
+        </div>
+        <div class="statement"></div>
+        <div class="btn">
+            <button onclick="playRound('ROCK')"><img class="tools" src="./images/rock.png" alt="A white rock."></button>
+            <button onclick="playRound('PAPER')"><img class="tools" src="./images/paper.png" alt="White paper"></button>
+            <button onclick="playRound('SCISSORS')"><img class="tools" src="./images/scissors.png" alt="A white pair of scissors."></button>
+    </div>
+    </div>
+    <div id="end">
+        <div class="winLose">
+        </div>
+    </div>
+</body>
+</html>
